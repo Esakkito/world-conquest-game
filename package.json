@@ -1,0 +1,25 @@
+{
+  "name": "world-conquest-game",
+  "version": "1.0.0",
+  "description": "Online multiplayer co-op world conquest strategy game",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd client && npm install"
+  },
+  "keywords": ["game", "strategy", "multiplayer", "conquest"],
+  "author": "Esakkito",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4",
+    "dotenv": "^16.0.3",
+    "uuid": "^9.0.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
